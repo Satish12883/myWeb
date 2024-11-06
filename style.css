@@ -1,0 +1,114 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.navbar{
+    background-color: #1e1e2c;
+    color: whitesmoke;
+}
+#navbarNav{
+    margin-left: 60%;
+}
+.navbar-nav{
+    gap: 30px;
+}
+.navbar-nav .nav-item a{
+    color: whitesmoke;
+padding: 5px 10px;
+text-decoration: none;
+text-align: center; 
+}
+.navbar-nav .nav-item a:hover{
+    cursor: pointer;
+color: white;
+border: 2px solid;
+border-image: linear-gradient(100deg, red,white, red)1;
+transition: background-color 0.3s ease, color 0.3s ease;
+}
+.sidebar {
+    height: auto; 
+    background-color: #1e1e2c;
+    color: whitesmoke;
+    padding: 17px 10px;
+}
+
+    .sidebar h6 {
+        color: white;
+        margin-top:4%;
+    }
+.navbar-brand{
+    color: red;
+}
+.container-fluid a:hover{
+    color: whitesmoke;
+}
+
+.nav-link {
+    color: white; 
+    transition: color 0.3s;
+    margin-top: 80px;
+}
+
+.icon-container {
+    padding: 15px;
+}
+.icon-container i {
+    transition: transform 0.3s; 
+}
+.icon-container i:hover {
+    transform: scale(1.2); 
+}
+.icon-container img:hover {
+    transform: scale(1.2); 
+}
+        
+
+.description{
+    align-content: center;
+}
+.container {
+    padding: 8px;
+}
+
+.Main .container-fluid {
+    padding: 10px;
+    border-style: solid;
+    border-image: linear-gradient(20deg,white, red, black,white,white,red,black,white) 1;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.userDiv {
+    padding: 20px;
+}
+
+.userDiv2 {
+    gap: 25px;
+}
+
+.Main {
+    padding: 20px;
+    background-color: #1e1e2c;
+    color: whitesmoke
+}
+
+.userName {
+    margin-top: 200px;
+    width: 250px;
+}
+
+#myAccordion {
+    background-color: #1e1e2c;
+    color: whitesmoke
+}
+.skills{
+    cursor:pointer;
+}
+.accordion-body{
+    gap: 20px;
+}
+
+
+
+
+
