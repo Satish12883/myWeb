@@ -8,7 +8,7 @@
     color: whitesmoke;
 }
 #navbarNav{
-    margin-left: 60%;
+    margin-left: 40%;
 }
 .navbar-nav{
     gap: 30px;
@@ -57,10 +57,10 @@ transition: background-color 0.3s ease, color 0.3s ease;
     transition: transform 0.3s; 
 }
 .icon-container i:hover {
-    transform: scale(1.2); 
+    transform: scale(1.5); 
 }
 .icon-container img:hover {
-    transform: scale(1.2); 
+    transform: scale(1.5); 
 }
         
 
@@ -107,7 +107,19 @@ transition: background-color 0.3s ease, color 0.3s ease;
 .accordion-body{
     gap: 20px;
 }
-
+.accordion-body a{
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 10px;
+    transition: transform 0.3s; 
+}
+.accordion-body a:hover{
+    color: whitesmoke;
+    padding: 10px;
+    background-color: rgb(7, 110, 7);
+    border-radius: 1rem;
+    transform: scale(1.5); 
+}
 
 
 
