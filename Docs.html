@@ -64,18 +64,6 @@
             color: whitesmoke;
         }
     </style>
-    <script>
-        function displayPdf(pdfUrl){
-         var pdfId=document.getElementById("pdfViewer");
-        if (pdfId) {
-           pdfId.src = pdfUrl;
-        } else {
-              console.error("PDF iframe not found!");
-           }
-         }
-         const pdfUrl = 'files/Nextcloud Manual.pdf';
-         displayPdf(pdfUrl);
-    </script>
 </head>
 <body>
     <div>
@@ -108,10 +96,13 @@
             </div>
         </nav>
     </div>
-    <div class="pdf-container">
-        <h5 id="title">MyDoc</h5>&nbsp;
-        <iframe id="pdfViewer" src="" width="70%" height="600px">
-        </iframe>  
+    <div class="pdf-container">        
+        <div align="center">
+            <h5 id="title">MyResume:</h5>&nbsp;
+            <img src="images/pdf1.jpeg" alt="pdf1" height="auto" width="auto"><br>
+            <img src="images/pdf2.jpeg" alt="pdf2" height="auto" width="auto">
+        </div>
+        
     </div>
      
 </body>
