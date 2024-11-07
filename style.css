@@ -1,11 +1,11 @@
-/* Base Reset */
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    background-color: #1e1e2c;
 }
 
-/* Navbar Styling */
 .navbar {
     background-color: #1e1e2c;
     color: whitesmoke;
@@ -14,7 +14,6 @@
     padding: 10px;
 }
 
-/* Navbar Brand & Toggler */
 .navbar-brand {
     font-size: 1.25rem;
     font-weight: bold;
@@ -24,14 +23,12 @@
     border: none;
 }
 
-/* Center Navbar Links */
 #navbarNav {
     display: flex;
     justify-content: center;
     gap: 20px;
 }
 
-/* Navbar Link Styling */
 .navbar-nav .nav-item a {
     color: whitesmoke;
     padding: 5px 10px;
@@ -42,12 +39,28 @@
 .navbar-nav .nav-item a:hover {
     color: orange;
 }
+.navbar-brand{
+    color: red;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 
 /* Sidebar and Main Content */
 .sidebar {
     padding: 15px;
-    background-color: #333;
+    background-color: #1e1e2c;
     color: whitesmoke;
+}
+.icon-container {
+    padding: 15px;
+}
+.icon-container i {
+    transition: transform 0.3s; 
+}
+.icon-container i:hover {
+    transform: scale(1.5); 
+}
+.icon-container img:hover {
+    transform: scale(1.5); 
 }
 
 .userDiv {
@@ -85,7 +98,7 @@ footer {
 
     /* Stack Sidebar and Content Vertically */
     .sidebar {
-        display: none; /* Hide sidebar for mobile */
+        display: block; /* Hide sidebar for mobile */
     }
 
     .Main {
@@ -110,7 +123,35 @@ footer {
     }
 }
 
-
+#myAccordion {
+    background-color: #1e1e2c;
+    color: whitesmoke
+}
+.skills{
+    cursor:pointer;
+}
+.accordion-body{
+    gap: 20px;
+}
+.accordion-body a{
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 10px;
+    transition: transform 0.3s; 
+}
+.accordion-body a:hover{
+    color: whitesmoke;
+    padding: 10px;
+    background-color: rgb(7, 110, 7);
+    border-radius: 1rem;
+    transform: scale(1.5); 
+}
+#mail{
+    color: white;
+}
+#mail:hover{
+    color: red;
+}
 
 
 
