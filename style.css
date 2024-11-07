@@ -8,7 +8,7 @@
     color: whitesmoke;
 }
 #navbarNav{
-    margin-left: 40%;
+    margin-left: 35%;
 }
 .navbar-nav{
     gap: 30px;
@@ -30,7 +30,7 @@ transition: background-color 0.3s ease, color 0.3s ease;
     height: auto; 
     background-color: #1e1e2c;
     color: whitesmoke;
-    padding: 17px 10px;
+    padding: 12px 0px;
 }
 
     .sidebar h6 {
@@ -39,6 +39,7 @@ transition: background-color 0.3s ease, color 0.3s ease;
     }
 .navbar-brand{
     color: red;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .container-fluid a:hover{
     color: whitesmoke;
@@ -93,8 +94,8 @@ transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .userName {
-    margin-top: 200px;
-    width: 250px;
+    margin-top: 50px;
+    width: 300px;
 }
 
 #myAccordion {
@@ -121,6 +122,16 @@ transition: background-color 0.3s ease, color 0.3s ease;
     transform: scale(1.5); 
 }
 
-
-
-
+.user-details{
+    display: flex;
+    gap: 25px;
+    font-family: Verdana;
+    flex-direction: row; 
+    justify-content: flex-start;
+}
+#mail{
+    color: white;
+}
+#mail:hover{
+    color: red;
+}

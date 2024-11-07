@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <title>Apps</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #1e1e2c;
+        }
+        .navbar {
+            background-color: #1e1e2c;
+            color: whitesmoke;
+        }
+
+        #navbarNav {
+            margin-left:35%;
+        }
+
+        .navbar-nav {
+            gap: 30px;
+        }
+
+        .navbar-nav .nav-item a {
+            color: whitesmoke;
+            padding: 5px 10px;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .navbar-nav .nav-item a:hover {
+            cursor: pointer;
+            color: white;
+            border: 2px solid;
+            border-image: linear-gradient(100deg, red, white, red)1;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .nav-link {
+            color: white;
+            transition: color 0.3s;
+            margin-top: 80px;
+        }
+
+        .navbar-brand {
+            color: red;
+        }
+
+        .portfolio-container {
+            width: 80%;
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h3,
+        h5 {
+            color: #2c3e50;
+        }
+
+        .project-title {
+            font-size: 2rem;
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        .project-overview,
+        .project-features,
+        .technologies-used,
+        .project-conclusion {
+            margin-bottom: 30px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+
+        ul li strong {
+            font-weight: bold;
+        }
+
+        h5 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            padding-bottom: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">MyProject</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="projects.html">Apps</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="Docs.html">Docs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="About.html">About</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+   <div class="main">
+    <div class="container">
+        <div class="portfolio-container w-75 mt-3 m-5">
+            <h3>Projects:</h3>
+            <div>
+                <h4 class="project-title">1.File Upload and User Management System</h4>
+                <div class="project-overview">
+                    <h5>Overview:</h5>
+                    <p>In this project, I developed a user-friendly web application using HTML, CSS, JavaScript, and
+                        .NET that allows users to create accounts, log in, and upload files. The application focuses on
+                        providing a seamless experience for file management while ensuring user authentication and data
+                        security.</p>
+                </div>
+                <div class="project-features">
+                    <h5>Features:</h5>
+                    <ul>
+                        <li><strong>User Registration:</strong> Users can create new accounts by providing essential
+                            information, which is validated to ensure data integrity.</li>
+                        <li><strong>User Login:</strong> Implemented secure authentication, allowing users to log in
+                            with their credentials. Error handling is included to inform users of incorrect login
+                            attempts.</li>
+                        <li><strong>File Upload:</strong> Users can upload files easily. The application supports
+                            various file types and ensures that files are securely stored on the server.</li>
+                        <li><strong>Responsive Design:</strong> The interface is designed to be responsive, providing a
+                            smooth experience on both desktop and mobile devices.</li>
+                    </ul>
+                </div>
+                <div class="technologies-used">
+                    <h5>Technologies Used</h5>
+                    <ul>
+                        <li><strong>Front-End:</strong> HTML, CSS, JavaScript</li>
+                        <li><strong>Back-End:</strong> .NET Framework</li>
+                        <li><strong>Database:</strong> MySql</li>
+                        <li><strong>Additional Libraries/Frameworks:</strong> jQuery,Bootstrap</li>
+                    </ul>
+                </div>
+                <div class="project-conclusion">
+                    <h4>Conclusion:</h4>
+                    <p>This project showcases my ability to integrate front-end and back-end technologies to create a
+                        functional web application. It highlights my skills in user interface design, user experience,
+                        and web development best practices.</p>
+                </div>
+            </div>
+            <hr>
+
+            <div>
+                <h4 class="project-title">2: Automated Data Extraction from EHR Websites</h4>
+                <div class="project-overview">
+                    <h5>Overview:</h5>
+                    <p>In this project, I developed an automated data extraction system using Selenium with C# to
+                        extract data from multiple Electronic Health Record (EHR) websites. The extracted data was
+                        collected, processed, and stored into MySQL tables. Furthermore, the data was transferred to a
+                        production database used by internal websites, ensuring seamless integration and access to
+                        up-to-date information.</p>
+                </div>
+                <div class="project-features">
+                    <h5>Features:</h5>
+                    <ul>
+                        <li><strong>Automated Data Extraction:</strong> Used Selenium WebDriver with C# to automate the
+                            process of navigating through EHR websites and extracting necessary data.</li>
+                        <li><strong>Data Storage:</strong> Extracted data was stored in MySQL tables, ensuring efficient
+                            data retrieval and management.</li>
+                        <li><strong>Data Transfer:</strong> Developed a process to transfer data from the staging MySQL
+                            tables to the production database, maintaining consistency and accuracy.</li>
+                        <li><strong>Error Handling:</strong> Implemented robust error handling to manage any failures
+                            during the extraction or data transfer processes.</li>
+                        <li><strong>Data Transformation:</strong> Ensured the data was correctly formatted before it was
+                            moved into the production environment to be used by other website databases.</li>
+                    </ul>
+                </div>
+                <div class="technologies-used">
+                    <h5>Technologies Used</h5>
+                    <div class="technologies">
+                        <p><strong>Automation Framework:</strong> Selenium WebDriver with C#</p>
+                        <p><strong>Database:</strong> MySQL (for both staging and production databases)</p>
+                    </div>
+                </div>
+                <div>
+                    <h5>Challenges Overcome</h5>
+                    <div class="challenges">
+                        <p>I encountered challenges such as dealing with inconsistent website structures and dynamic
+                            content loading, which required me to implement advanced techniques for web scraping.
+                            Additionally, ensuring the integrity of the data during the transfer to the production
+                            database was critical, and I implemented strategies to mitigate potential issues.</p>
+                    </div>
+                </div>
+                <div class="project-conclusion">
+                    <h5>Conclusion:</h5>
+                    <div class="conclusion">
+                        <p>This project demonstrates my proficiency in web scraping, data processing, and database
+                            management. By automating the extraction and transfer of EHR data, I improved operational
+                            efficiency and reduced manual data entry efforts. This project highlights my skills in C#,
+                            Selenium, and MySQL, as well as my ability to integrate different systems for streamlined
+                            data management.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+   </div>
+</body>
+
+</html>
