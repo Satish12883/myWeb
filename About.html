@@ -10,10 +10,10 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script src="script.js" ></script> 
+  <!-- <script src="script.js"></script> -->
   <script>
-    
-    </script>
+
+  </script>
   <title>MyDetails</title>
   <style>
     body {
@@ -27,6 +27,43 @@
     .navbar {
       background-color: #1e1e2c;
       color: whitesmoke;
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+    }
+
+    #navbarNav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .navbar-nav {
+      gap: 30px;
+    }
+
+    .navbar-nav .nav-item a {
+      color: whitesmoke;
+      padding: 5px 10px;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .navbar-nav .nav-item a:hover {
+      color: orange;
+      border: 1px solid;
+      border-image: linear-gradient(100deg, red, white, red)1;
+      transition: background-image 0.2s ease, color 0.2s ease;
+
+    }
+
+    .navbar-brand {
+      color: orange;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    .navbar-toggler-icon {
+      color: orange;
     }
 
     @media (min-width: 769px) {
@@ -61,7 +98,7 @@
       }
     }
 
-    #navbarNav {
+    /* #navbarNav {
       margin-left: 35%;
     }
 
@@ -74,7 +111,7 @@
       padding: 5px 10px;
       text-decoration: none;
       text-align: center;
-    }
+    } */
 
     .navbar-nav .nav-item a:hover {
       cursor: pointer;
@@ -151,45 +188,41 @@
         padding: 0.5rem;
       }
     }
-    .navbar-brand{
-      color: red;
-      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    }
   </style>
 </head>
 
 <body>
-  <div id="container">
+  <div>
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Sateesh</a>
+        <a class="navbar-brand" href="#">&nbsp;Sateesh</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon">☰</span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="navbar-collapse " id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a href="index.html">Home</a>
+              <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a href="projects.html">Apps</a>
+              <a class="nav-link" href="projects.html">Projects</a>
             </li>
             <li class="nav-item">
-              <a href="Docs.html">Docs</a>
+              <a class="nav-link" href="Docs.html">Resume</a>
             </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li> -->
             <li class="nav-item">
-              <a href="#">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a href="About.html">About</a>
+              <a class="nav-link" href="About.html">About</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
   </div>
-  <div class="profile-card">
+  <div class="profile-card" align="center">
     <img src="your-photo.jpg" alt="YourPhoto">
     <h2>Sateesh Nemalikanti</h2>
     <p>Software engineer</p>
