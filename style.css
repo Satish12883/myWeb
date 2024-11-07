@@ -1,4 +1,134 @@
-*{
+/* Base Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #1e1e2c;
+    color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+/* Navbar Brand & Toggler */
+.navbar-brand {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+/* Center Navbar Links */
+#navbarNav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Navbar Link Styling */
+.navbar-nav .nav-item a {
+    color: whitesmoke;
+    padding: 5px 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-item a:hover {
+    color: orange;
+}
+
+/* Sidebar and Main Content */
+.sidebar {
+    padding: 15px;
+    background-color: #333;
+    color: whitesmoke;
+}
+
+.userDiv {
+    padding: 20px;
+    text-align: center;
+}
+
+.Main {
+    flex: 1;
+    padding: 15px;
+}
+
+/* Contact and Map Styling */
+.contact {
+    text-align: left;
+    padding: 15px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #1e1e2c;
+    color: whitesmoke;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    #navbarNav {
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Stack Sidebar and Content Vertically */
+    .sidebar {
+        display: none; /* Hide sidebar for mobile */
+    }
+
+    .Main {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .user-details, .g-map {
+        padding: 10px;
+    }
+
+    /* Reduce Image Size for Small Screens */
+    .userDiv img {
+        width: 120px;
+        height: 120px;
+    }
+
+    /* Contact and About Section Adjustments */
+    .contact, .g-map {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* *{
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
@@ -188,4 +318,4 @@ transition: background-color 0.3s ease, color 0.3s ease;
 /* img, video {
     max-width: 100%;
     height: auto;
-} */
+} */ 

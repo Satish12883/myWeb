@@ -9,3 +9,6 @@
 // }
 // const pdfUrl = 'files/Nextcloud Manual.pdf';
 // displayPdf(pdfUrl);
+$(document).ready(function(){
+    alert("pageload");
+  });
