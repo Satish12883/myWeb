@@ -21,13 +21,46 @@
             color: #333;
             background-color: #1e1e2c;
         }
+
         .navbar {
             background-color: #1e1e2c;
             color: whitesmoke;
         }
 
+        @media (min-width: 769px) {
+            .navbar {
+                flex-direction: row;
+            }
+
+            .navbar-collapse {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                background-color: #1e1e2c;
+            }
+
+            .navbar-toggle {
+                display: block;
+                cursor: pointer;
+                font-size: 1.5rem;
+                padding: 1rem;
+                background-color: #333;
+                color: whitesmoke;
+                text-align: center;
+            }
+
+            .navbar-collapse.show {
+                display: flex;
+            }
+
+            .navbar-nav .nav-item {
+                text-align: center;
+                padding: 0.5rem 0;
+            }
+        }
+
         #navbarNav {
-            margin-left:35%;
+            margin-left: 35%;
         }
 
         .navbar-nav {
@@ -57,6 +90,26 @@
 
         .navbar-brand {
             color: red;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .container {
+            width: 80%;
+            padding: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                width: 100%;
+                padding: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                font-size: 1rem;
+                padding: 0.5rem;
+            }
         }
 
         .portfolio-container {
@@ -113,7 +166,7 @@
     <div>
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">MyProject</a>
+                <a class="navbar-brand" href="#">Sateesh</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -140,107 +193,121 @@
             </div>
         </nav>
     </div>
-   <div class="main">
-    <div class="container">
-        <div class="portfolio-container w-75 mt-3 m-5">
-            <h3>Projects:</h3>
-            <div>
-                <h4 class="project-title">1.File Upload and User Management System</h4>
-                <div class="project-overview">
-                    <h5>Overview:</h5>
-                    <p>In this project, I developed a user-friendly web application using HTML, CSS, JavaScript, and
-                        .NET that allows users to create accounts, log in, and upload files. The application focuses on
-                        providing a seamless experience for file management while ensuring user authentication and data
-                        security.</p>
-                </div>
-                <div class="project-features">
-                    <h5>Features:</h5>
-                    <ul>
-                        <li><strong>User Registration:</strong> Users can create new accounts by providing essential
-                            information, which is validated to ensure data integrity.</li>
-                        <li><strong>User Login:</strong> Implemented secure authentication, allowing users to log in
-                            with their credentials. Error handling is included to inform users of incorrect login
-                            attempts.</li>
-                        <li><strong>File Upload:</strong> Users can upload files easily. The application supports
-                            various file types and ensures that files are securely stored on the server.</li>
-                        <li><strong>Responsive Design:</strong> The interface is designed to be responsive, providing a
-                            smooth experience on both desktop and mobile devices.</li>
-                    </ul>
-                </div>
-                <div class="technologies-used">
-                    <h5>Technologies Used</h5>
-                    <ul>
-                        <li><strong>Front-End:</strong> HTML, CSS, JavaScript</li>
-                        <li><strong>Back-End:</strong> .NET Framework</li>
-                        <li><strong>Database:</strong> MySql</li>
-                        <li><strong>Additional Libraries/Frameworks:</strong> jQuery,Bootstrap</li>
-                    </ul>
-                </div>
-                <div class="project-conclusion">
-                    <h4>Conclusion:</h4>
-                    <p>This project showcases my ability to integrate front-end and back-end technologies to create a
-                        functional web application. It highlights my skills in user interface design, user experience,
-                        and web development best practices.</p>
-                </div>
-            </div>
-            <hr>
-
-            <div>
-                <h4 class="project-title">2: Automated Data Extraction from EHR Websites</h4>
-                <div class="project-overview">
-                    <h5>Overview:</h5>
-                    <p>In this project, I developed an automated data extraction system using Selenium with C# to
-                        extract data from multiple Electronic Health Record (EHR) websites. The extracted data was
-                        collected, processed, and stored into MySQL tables. Furthermore, the data was transferred to a
-                        production database used by internal websites, ensuring seamless integration and access to
-                        up-to-date information.</p>
-                </div>
-                <div class="project-features">
-                    <h5>Features:</h5>
-                    <ul>
-                        <li><strong>Automated Data Extraction:</strong> Used Selenium WebDriver with C# to automate the
-                            process of navigating through EHR websites and extracting necessary data.</li>
-                        <li><strong>Data Storage:</strong> Extracted data was stored in MySQL tables, ensuring efficient
-                            data retrieval and management.</li>
-                        <li><strong>Data Transfer:</strong> Developed a process to transfer data from the staging MySQL
-                            tables to the production database, maintaining consistency and accuracy.</li>
-                        <li><strong>Error Handling:</strong> Implemented robust error handling to manage any failures
-                            during the extraction or data transfer processes.</li>
-                        <li><strong>Data Transformation:</strong> Ensured the data was correctly formatted before it was
-                            moved into the production environment to be used by other website databases.</li>
-                    </ul>
-                </div>
-                <div class="technologies-used">
-                    <h5>Technologies Used</h5>
-                    <div class="technologies">
-                        <p><strong>Automation Framework:</strong> Selenium WebDriver with C#</p>
-                        <p><strong>Database:</strong> MySQL (for both staging and production databases)</p>
-                    </div>
-                </div>
+    <div class="main">
+        <div class="container">
+            <div class="portfolio-container w-75 mt-3 m-5">
+                <h3>Projects:</h3>
                 <div>
-                    <h5>Challenges Overcome</h5>
-                    <div class="challenges">
-                        <p>I encountered challenges such as dealing with inconsistent website structures and dynamic
-                            content loading, which required me to implement advanced techniques for web scraping.
-                            Additionally, ensuring the integrity of the data during the transfer to the production
-                            database was critical, and I implemented strategies to mitigate potential issues.</p>
+                    <h4 class="project-title">1.File Upload and User Management System</h4>
+                    <div class="project-overview">
+                        <h5>Overview:</h5>
+                        <p>In this project, I developed a user-friendly web application using HTML, CSS, JavaScript, and
+                            .NET that allows users to create accounts, log in, and upload files. The application focuses
+                            on
+                            providing a seamless experience for file management while ensuring user authentication and
+                            data
+                            security.</p>
+                    </div>
+                    <div class="project-features">
+                        <h5>Features:</h5>
+                        <ul>
+                            <li><strong>User Registration:</strong> Users can create new accounts by providing essential
+                                information, which is validated to ensure data integrity.</li>
+                            <li><strong>User Login:</strong> Implemented secure authentication, allowing users to log in
+                                with their credentials. Error handling is included to inform users of incorrect login
+                                attempts.</li>
+                            <li><strong>File Upload:</strong> Users can upload files easily. The application supports
+                                various file types and ensures that files are securely stored on the server.</li>
+                            <li><strong>Responsive Design:</strong> The interface is designed to be responsive,
+                                providing a
+                                smooth experience on both desktop and mobile devices.</li>
+                        </ul>
+                    </div>
+                    <div class="technologies-used">
+                        <h5>Technologies Used</h5>
+                        <ul>
+                            <li><strong>Front-End:</strong> HTML, CSS, JavaScript</li>
+                            <li><strong>Back-End:</strong> .NET Framework</li>
+                            <li><strong>Database:</strong> MySql</li>
+                            <li><strong>Additional Libraries/Frameworks:</strong> jQuery,Bootstrap</li>
+                        </ul>
+                    </div>
+                    <div class="project-conclusion">
+                        <h4>Conclusion:</h4>
+                        <p>This project showcases my ability to integrate front-end and back-end technologies to create
+                            a
+                            functional web application. It highlights my skills in user interface design, user
+                            experience,
+                            and web development best practices.</p>
                     </div>
                 </div>
-                <div class="project-conclusion">
-                    <h5>Conclusion:</h5>
-                    <div class="conclusion">
-                        <p>This project demonstrates my proficiency in web scraping, data processing, and database
-                            management. By automating the extraction and transfer of EHR data, I improved operational
-                            efficiency and reduced manual data entry efforts. This project highlights my skills in C#,
-                            Selenium, and MySQL, as well as my ability to integrate different systems for streamlined
-                            data management.</p>
+                <hr>
+
+                <div>
+                    <h4 class="project-title">2: Automated Data Extraction from EHR Websites</h4>
+                    <div class="project-overview">
+                        <h5>Overview:</h5>
+                        <p>In this project, I developed an automated data extraction system using Selenium with C# to
+                            extract data from multiple Electronic Health Record (EHR) websites. The extracted data was
+                            collected, processed, and stored into MySQL tables. Furthermore, the data was transferred to
+                            a
+                            production database used by internal websites, ensuring seamless integration and access to
+                            up-to-date information.</p>
+                    </div>
+                    <div class="project-features">
+                        <h5>Features:</h5>
+                        <ul>
+                            <li><strong>Automated Data Extraction:</strong> Used Selenium WebDriver with C# to automate
+                                the
+                                process of navigating through EHR websites and extracting necessary data.</li>
+                            <li><strong>Data Storage:</strong> Extracted data was stored in MySQL tables, ensuring
+                                efficient
+                                data retrieval and management.</li>
+                            <li><strong>Data Transfer:</strong> Developed a process to transfer data from the staging
+                                MySQL
+                                tables to the production database, maintaining consistency and accuracy.</li>
+                            <li><strong>Error Handling:</strong> Implemented robust error handling to manage any
+                                failures
+                                during the extraction or data transfer processes.</li>
+                            <li><strong>Data Transformation:</strong> Ensured the data was correctly formatted before it
+                                was
+                                moved into the production environment to be used by other website databases.</li>
+                        </ul>
+                    </div>
+                    <div class="technologies-used">
+                        <h5>Technologies Used</h5>
+                        <div class="technologies">
+                            <p><strong>Automation Framework:</strong> Selenium WebDriver with C#</p>
+                            <p><strong>Database:</strong> MySQL (for both staging and production databases)</p>
+                        </div>
+                    </div>
+                    <div>
+                        <h5>Challenges Overcome</h5>
+                        <div class="challenges">
+                            <p>I encountered challenges such as dealing with inconsistent website structures and dynamic
+                                content loading, which required me to implement advanced techniques for web scraping.
+                                Additionally, ensuring the integrity of the data during the transfer to the production
+                                database was critical, and I implemented strategies to mitigate potential issues.</p>
+                        </div>
+                    </div>
+                    <div class="project-conclusion">
+                        <h5>Conclusion:</h5>
+                        <div class="conclusion">
+                            <p>This project demonstrates my proficiency in web scraping, data processing, and database
+                                management. By automating the extraction and transfer of EHR data, I improved
+                                operational
+                                efficiency and reduced manual data entry efforts. This project highlights my skills in
+                                C#,
+                                Selenium, and MySQL, as well as my ability to integrate different systems for
+                                streamlined
+                                data management.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
+        </div>
     </div>
-   </div>
 </body>
 
 </html>
